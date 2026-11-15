@@ -170,8 +170,8 @@ filtered = search_jobs(
 
 sort_by = st.selectbox(
     "Sort results",
-    ["Newest first", "Oldest first", "Company A–Z", "Salary: high to low"],
-    horizontal=True,
+    ["Newest first", "Oldest first", "Company A–Z", "Salary: high to low"]
+    
 )
 if sort_by == "Newest first":
     filtered = filtered.sort_values("date_posted", ascending=False, na_position="last")
